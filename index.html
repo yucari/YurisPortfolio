@@ -13,6 +13,11 @@
 
 
     <title>ポートフォリオサイト-yuri-</title>
+
+<!-- モーダル -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<!-- グーグル -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
@@ -97,7 +102,7 @@
         <div class="message__content section__content">
             <div class="message__message">
                 <h3 class="message__title">ご覧いただきありがとうございます。</h3>
-                <p class="message__text">私は人や物事が繋がることがとても好きで、そこから生まれる輪やご縁を大切に思っております。<br>お仕事をお受けする際にも、全ての方とご縁とを大切にしていきたいと考えておりますので、一人一人のご相談に丁寧に向き合い、ご対応をさせて頂きたいと思っております。<br>ホームページを通して、企業様の魅力をご紹介させていただき、お客様と企業様の<br>大切な「繋がりの輪」を作るお手伝いができれば、とても嬉しいです。</p>
+                <p class="message__text">私は人や物事が繋がっていくことがとても好きで、そこから生まれる『輪』や『ご縁』を大切に思っております。<br>お仕事をお受けする際にも、全ての方とご縁とを大切にしていきたいと考えておりますので、一人一人のご相談に丁寧に向き合い、ご対応をさせて頂きたいと思っております。<br>ホームページを通して、企業様の魅力をご紹介させていただき、お客様と企業様の<br>大切な「繋がりの輪」を作るお手伝いができれば、とても嬉しいです。</p>
             </div>
         </div>
     </div>
@@ -113,16 +118,18 @@
     <div class=" section__content">
     <div class="works__message">
     <h3 class="works__title">R5.09~現在までの制作実績です</h3>   
-    <p class="works__text">スクールデイトラ入学後、HTML・CSS・Javascript・Wordpressまでを学びました</p>   
+    <p class="works__text">使用言語&emsp;HTML・CSS<br hidden-tb>・Javascript・jQuery</p>   
     </div>
     <div class="works__cards">
 <!--------  card-1  ---------->
         <div class="works__card works-card">
-            <a class="works-card__image" target="_blank"><img src="./img/app-site.png" width="350" height="200" alt=""></a>
-            <div class="works-card__body">
+            <div class="works-card__head">
             <h3 class="works-card__title">架空通話アプリサイト<br>(静的コーディング)</h3>
+            <a class="works-card__image" target="_blank"><img src="./img/app-site.png" width="350" height="200" alt=""></a>
+            </div>
+            <div class="works-card__body">
             <button class="works-card__btn">
-                <a class="bt-samp54" target="_blank">
+                <a href="#modal-1" class="bt-samp54  modal-open" data-micromodal-trigger="modal-1" >
                     <div>
                         <i class="fa fa-github-alt"></i>
                         <span>詳しく見る</span>
@@ -132,65 +139,73 @@
         </div>
         </div>
 <!--------  card-2  ---------->
-        <div class="works__card works-card">
-            <a class="works-card__image" target="_blank"><img src="./img/accessory-site.png" width="350" height="200" alt=""></a>
-            <div class="works-card__body">
-            <h3 class="works-card__title">架空アクセサリーサイト<br>(静的コーディング)</h3>
-            <button class="works-card__btn">
-                <a class="bt-samp54" target="_blank">
-                    <div>
-                    <i class="fa fa-github-alt"></i>
-                    <span>詳しく見る</span>
-                    </div>
-                    <p>Enter text here</p>
-                </a></button>
-        </div>
-        </div>
+<div class="works__card works-card">
+    <div class="works-card__head">
+    <h3 class="works-card__title">架空アクセサリーサイト<br>(静的コーディング)</h3>
+    <a class="works-card__image" target="_blank"><img src="./img/accessory-site.png" width="350" height="200" alt=""></a>
+    </div>
+    <div class="works-card__body">
+    <button class="works-card__btn">
+        <a class="bt-samp54" target="_blank">
+            <div>
+                <i class="fa fa-github-alt"></i>
+                <span>詳しく見る</span>
+                </div>
+            <p>Enter text here</p>
+        </a></button>
+</div>
+</div>
 <!--------  card-3  ---------->
-        <div class="works__card works-card">
-            <a class="works-card__image" target="_blank"><img src="./img/campaegn-site.png" width="350" height="200" alt=""></a>
-            <div class="works-card__body">
-            <h3 class="works-card__title">架空キャンペーンサイト<br>(静的コーディング)</h3>
-            <button class="works-card__btn">
-                <a class="bt-samp54" target="_blank">
-                    <div>
-                        <i class="fa fa-github-alt"></i>
-                        <span>詳しく見る</span>
-                    </div>
-                    <p>Enter text here</p>
-                </a></button>
-        </div>
-        </div>
+<div class="works__card works-card">
+    <div class="works-card__head">
+    <h3 class="works-card__title">架空キャンペーンサイト<br>(静的コーディング)</h3>
+    <a class="works-card__image" target="_blank"><img src="./img/campaegn-site.png" width="350" height="200" alt=""></a>
+    </div>
+    <div class="works-card__body">
+    <button class="works-card__btn">
+        <a class="bt-samp54" target="_blank">
+            <div>
+                <i class="fa fa-github-alt"></i>
+                <span>詳しく見る</span>
+                </div>
+            <p>Enter text here</p>
+        </a></button>
+</div>
+</div>
 <!--------  card-4  ---------->
-        <div class="works__card works-card">
-            <a class="works-card__image" target="_blank"><img src="./img/corporate-saite.png" width="350" height="200" alt=""></a>
-            <div class="works-card__body">
-            <h3 class="works-card__title">架空コーポレートサイト<br>(静的•動的コーディング)</h3>
-            <button class="works-card__btn">
-                <a class="bt-samp54" target="_blank">
-                    <div>
-                      <i class="fa fa-github-alt"></i>
-                      <span>詳しく見る</span>
-                    </div>
-                    <p>Enter text here</p>
-                  </a></button>
-        </div>
-        </div>
+<div class="works__card works-card">
+    <div class="works-card__head">
+    <h3 class="works-card__title">架空通話アプリサイト<br>(静的コーディング・wordpress))</h3>
+    <a class="works-card__image" target="_blank"><img src="./img/corporate-saite.png" width="350" height="200" alt=""></a>
+    </div>
+    <div class="works-card__body">
+    <button class="works-card__btn">
+        <a class="bt-samp54" target="_blank">
+            <div>
+                <i class="fa fa-github-alt"></i>
+                <span>詳しく見る</span>
+                </div>
+            <p>Enter text here</p>
+        </a></button>
+</div>
+</div>
 <!--------  card-5  ---------->
-        <div class="works__card works-card">
-            <a href="https://web-yuri021120.com/" target="_blank" class="works-card__image"><img src="./img/company-site.png" width="350" height="200" alt=""></a>
-            <div class="works-card__body">
-            <h3 class="works-card__title">架空キャンペーンサイト<br>(静的コーディング)</h3>
-            <button class="works-card__btn">
-                <a class="bt-samp54" target="_blank">
-                    <div>
-                        <i class="fa fa-github-alt"></i>
-                        <span>詳しく見る</span>
-                    </div>
-                    <p>Enter text here</p>
-                </a></button>
-        </div>
-        </div>
+<div class="works__card works-card">
+    <div class="works-card__head">
+    <h3 class="works-card__title">架空企業サイト<br>(静的コーディング</h3>
+    <a href="https://web-yuri021120.com/" class="works-card__image" target="_blank"><img src="./img/company-site.png" width="350" height="200" alt=""></a>
+    </div>
+    <div class="works-card__body">
+    <button class="works-card__btn">
+        <a class="bt-samp54" target="_blank">
+            <div>
+                <i class="fa fa-github-alt"></i>
+                <span>詳しく見る</span>
+                </div>
+            <p>Enter text here</p>
+        </a></button>
+</div>
+</div>
     </div>
 </div>
 </div>
@@ -245,7 +260,7 @@
                 </div>
             </div>
             <div class="work-flow__card work-flow-card">
-                <div class="work-flow-card__image"><img src="./img/iPadでWeb会議を快適に！ 意外なメリットを解説します.jpeg" width="300" height="300" alt=""></div>
+                <div class="work-flow-card__image"><img src="./img/ipad.png" width="300" height="300" alt=""></div>
                 <div class="work-flow-card__body">
                     <h3 class="work-flow-card__title  wow fadeInUp">確認</h3>
                         <p class="work-flow-card__text">お客様にコーディングしたサイトをご確認いただきます。不足部分の修正と対応を行います。</p>
@@ -277,19 +292,21 @@
                 <p class="about-city__title">ここまでご覧いただき<br class="hidden-pc">ありがとうございます</p>
                 <p class="about-city__text">最後に、私の大好きな地元静岡県藤枝市を少しだけ紹介させてください</p>
             </div>
+            <div class="about-city__img-box">
+                <div class="about-city__img"></div>
+                <div class="about-city__img-2"></div>
+            </div>
             <div class="about-city__content">
-                         <dl class="city__lists">私が思う藤枝市ってこんなところ
-                            <dt class="js-button">&emsp;ー 年中暖かい ー</dt>
-                            <dd>年間の平均温度が16.6&#x2103;と、一年通して暖かい日が多い地域です。県民性と似ていてのんびり穏やかなところです<span class="material-symbols-outlined">
-                                wb_sunny
-                                </span>
+                         <dl class="city__lists">私が思う<a href="https://www.city.fujieda.shizuoka.jp/trip/index.html" target="_blank">藤枝市</a>ってこんなところ
+                            <dt class="js-button">&emsp;ー 年中<a href="https://www.city.fujieda.shizuoka.jp/trip/travel_around/meguritabi/1449826924877.html" target="_blank">暖かく</a>のんびりな街 ー</dt>
+                            <dd>年間の平均温度が16.6&#x2103;と、一年通して暖かい日が多い地域です。県民性と似ていてのんびり穏やかなところです
                                 </dd>
-                            <dt class="js-button">&emsp;ー藤枝市といえばお茶ー</dt>
+                            <dt class="js-button">&emsp;ー藤枝市といえば<a href="https://www.shizutetsu-retailing.com/gyokuronosato/" target="_blank">お茶</a>ー</dt>
                             <dd>玉露の里、お茶の香ロード、世界で一番濃い抹茶ジェラートがあるななやさん等、藤枝市には多くのお茶スポットがあります
                                 </dd>
-                            <dt class="js-button">ー藤枝市といえば朝ラーメンー</dt>
+                            <dt class="js-button">ー藤枝市といえば<a href="https://www.city.fujieda.shizuoka.jp/trip/buy/asaramen.html" target="_blank">朝ラーメン</a>ー</dt>
                             <dd>朝にラーメンを食べる朝ラーという習慣があります。夏には冷やしラーメンも人気です</dd>
-                            <dt class="js-button">&emsp;ー藤枝市といえばサッカー</dt>
+                            <dt class="js-button">&emsp;ー藤枝市といえば<a href="https://www.city.fujieda.shizuoka.jp/soccer/index.html" target="_blank">サッカー</a></dt>
                             <dd>元日本代表長谷部誠選手の出身地です。高校もサッカー強豪校が多く、藤枝駅の階段には大きく蹴球都市の文字が！</dd>
                             <dt class="js-button">ー藤枝市の合言葉は~だら〜(でしょう)ー</dt>
                             <dd>語尾にだら〜がつきます。ダラダラしてるわけではありません</dd>
@@ -301,8 +318,6 @@
     </div>
 </section>
 
-
-
 </main>
 
 <footer class="footer">
@@ -310,7 +325,7 @@
        
             <div class="footer_contents">
               <div class="footer_logo">
-                <a href="">Yuri Yamashita Portfolio</a>
+                <a href="">Yuri Yamashita Portfolio&emsp;ありがとうございました<br>ご連絡は下記SNSからも承っております。お気軽にどうぞ<span></span></a>
               </div>
               <div class="footer_nav">
                 <ul class="footer__sns-items">
@@ -324,10 +339,37 @@
                 </ul>
               </div>
             </div>
-            <small class="copyright">©️2024 yuri yamashita. All Rights Reserved.</small>
+            <small class="copyright">&copy;2024 yuri yamashita. All Rights Reserved.</small>
           
     </div>
 </footer>
+
+<!--------  モーダル  ---------->
+
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <!-- 背景のオーバーレイ -->
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+        <div
+        class="modal-container"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-1-title"
+      >
+        <header class="modal-header">
+          <!-- 閉じるボタン -->
+          <button
+            class="modal-close"
+            aria-label="Close modal"
+            data-micromodal-close
+          ></button>
+        </header>
+        <!-- モーダルのコンテンツ -->
+        <div class="modal-content" id="modal-1-content">
+            
+        </div>
+      </div>
+    </div>
+  </div>
 
 <script src="js/wow.min.js"></script>
 <script>

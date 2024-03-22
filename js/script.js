@@ -211,6 +211,8 @@ jQuery('a[href^="#"]').on("click", function (e) {
     "swing" // swing だとゆっくりからだんだん早く linear だと一定の速さで//
   );
 });
-
+MicroModal.init({
+  disableScroll: true,
+});
 
 })
