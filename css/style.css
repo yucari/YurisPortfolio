@@ -2491,11 +2491,41 @@ a.bt-samp54 p {
   margin-top: 2rem;
 }
 
-.box01 {
-  background-color: #ccc;
-  height: 200px;
+.modal-card {
+  background-color: rgba(62, 161, 209, 0.2588235294);
+  height: auto;
   margin: 0 auto;
   width: 90%;
+}
+
+.modal-card__image {
+  display: block;
+  width: 100%;
+  height: 220px;
+}
+.modal-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+.modal-card__body p {
+  text-align: center;
+}
+
+.modal-card__title {
+  text-align: center;
 }
 
 /* モーダルアニメーション */

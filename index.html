@@ -129,12 +129,12 @@
             </div>
             <div class="works-card__body">
             <button class="works-card__btn">
-                <a href="#modal-1" class="bt-samp54  modal-open" data-micromodal-trigger="modal-1" >
+                <a class="bt-samp54" >
                     <div>
                         <i class="fa fa-github-alt"></i>
                         <span>詳しく見る</span>
                         </div>
-                    <p>Enter text here</p>
+                    <p class="modal-open" data-micromodal-trigger="modal-1">Enter text here</p>
                 </a></button>
         </div>
         </div>
@@ -151,7 +151,7 @@
                 <i class="fa fa-github-alt"></i>
                 <span>詳しく見る</span>
                 </div>
-            <p>Enter text here</p>
+            <p class="modal-open" data-micromodal-trigger="modal-2">Enter text here</p>
         </a></button>
 </div>
 </div>
@@ -168,7 +168,7 @@
                 <i class="fa fa-github-alt"></i>
                 <span>詳しく見る</span>
                 </div>
-            <p>Enter text here</p>
+            <p class="modal-open" data-micromodal-trigger="modal-3">Enter text here</p>
         </a></button>
 </div>
 </div>
@@ -185,7 +185,7 @@
                 <i class="fa fa-github-alt"></i>
                 <span>詳しく見る</span>
                 </div>
-            <p>Enter text here</p>
+            <p class="modal-open" data-micromodal-trigger="modal-4">Enter text here</p>
         </a></button>
 </div>
 </div>
@@ -202,7 +202,7 @@
                 <i class="fa fa-github-alt"></i>
                 <span>詳しく見る</span>
                 </div>
-            <p>Enter text here</p>
+            <p class="modal-open" data-micromodal-trigger="modal-5">Enter text here</p>
         </a></button>
 </div>
 </div>
@@ -296,7 +296,7 @@
                 <div class="about-city__img"></div>
                 <div class="about-city__img-2"></div>
             </div>
-            <div class="about-city__content">
+            <div class="about-city__cotent box1">
                          <dl class="city__lists">私が思う<a href="https://www.city.fujieda.shizuoka.jp/trip/index.html" target="_blank">藤枝市</a>ってこんなところ
                             <dt class="js-button">&emsp;ー 年中<a href="https://www.city.fujieda.shizuoka.jp/trip/travel_around/meguritabi/1449826924877.html" target="_blank">暖かく</a>のんびりな街 ー</dt>
                             <dd>年間の平均温度が16.6&#x2103;と、一年通して暖かい日が多い地域です。県民性と似ていてのんびり穏やかなところです
@@ -346,7 +346,9 @@
 
 <!--------  モーダル  ---------->
 
-<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+
+<!--------  モーダル-1  ---------->
+<div class="modal-1 micromodal-slide" id="modal-1" aria-hidden="true">
     <!-- 背景のオーバーレイ -->
     <div class="modal-overlay" tabindex="-1" data-micromodal-close>
         <div
@@ -356,26 +358,85 @@
         aria-labelledby="modal-1-title"
       >
         <header class="modal-header">
-          <!-- 閉じるボタン -->
-          <button
+<!-- 閉じるボタン -->
+        <button
             class="modal-close"
             aria-label="Close modal"
             data-micromodal-close
-          ></button>
+        ></button>
         </header>
-        <!-- モーダルのコンテンツ -->
+<!-- モーダルのコンテンツ -->
+
         <div class="modal-content" id="modal-1-content">
-            <div class="modal-1__card work-flow__card work-flow-card">
-                <div class="work-flow-card__image"><img src="./img/christina-wocintechchat-com-eF7HN40WbAQ-unsplash.jpg" width="300" height="300" alt=""></div>
-                <div class="work-flow-card__body">
-                    <h3 class="work-flow-card__title  wow fadeInUp">ご相談・お見積り</h3>
-                        <p class="work-flow-card__text">要件や納期、予算などお気軽にご相談ください。対応内容に応じてお見積りをお送りいたします。</p>
+            <div class="modal-card">
+                <a href="" class="modal-card__image" target="_blank"><img src="./img/app-site.png" width="300" height="300" alt=""></a>
+                <div class="modal-card__body">
+                    <h3 class="modal-card__title">架空通話アプリサイト</h3>
+                    <p>1page 10section</p>
+                        <ul class="modal-card__lists">
+                            <li>・FV</li>
+                            <li>・導入実績</li>
+                            <li>・NEWS一覧</li>
+                            <li>・MV (モーダル)</li>
+                            <li>・MOVIE(YOUTUBE埋め込み)</li>
+                            <li>・How&nbsp;to&nbsp;use</li>
+                            <li>・CTA</li>
+                            <li>・Price&nbsp;comparison</li>
+                            <li>・Q&A</li>
+                            <li>・GALLERYスライダー</li><li>・お問い合わせ</li>
+                            </ul>
                 </div>
             </div>
         </div>
-      </div>
+        </div>
     </div>
-  </div>
+    </div>
+
+<!--------  モーダル-2  ---------->
+
+<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+    <!-- 背景のオーバーレイ -->
+    <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+        <div
+        class="modal-container"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-1-title"
+      >
+        <header class="modal-header">
+<!-- 閉じるボタン -->
+        <button
+            class="modal-close"
+            aria-label="Close modal"
+            data-micromodal-close
+        ></button>
+        </header>
+<!-- モーダルのコンテンツ -->
+
+        <div class="modal-content" id="modal-2-content">
+            <div class="modal-card">
+                <a href="" class="modal-card__image" target="_blank"><img src="./img/app-site.png" width="300" height="300" alt=""></a>
+                <div class="modal-card__body">
+                    <h3 class="modal-card__title">架空通話アプリサイト</h3>
+                    <p>1page 10section</p>
+                        <ul class="modal-card__lists">
+                            <li>・FV</li>
+                            <li>・導入実績</li>
+                            <li>・NEWS一覧</li>
+                            <li>・MV (モーダル)</li>
+                            <li>・MOVIE(YOUTUBE埋め込み)</li>
+                            <li>・How&nbsp;to&nbsp;use</li>
+                            <li>・CTA</li>
+                            <li>・Price&nbsp;comparison</li>
+                            <li>・Q&A</li>
+                            <li>・GALLERYスライダー</li><li>・お問い合わせ</li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 
 <script src="js/wow.min.js"></script>
 <script>

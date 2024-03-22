@@ -2136,11 +2136,43 @@ justify-content: center;
   margin-top: 2rem;
 }
 
-.box01 {
-  background-color: #ccc;
-  height: 200px;
+.modal-card {
+  background-color: #3ea1d142;
+  height: auto;
   margin: 0 auto;
   width: 90%;
+}
+.modal-card{
+
+}
+.modal-card__image{
+  display: block;
+  width: 100%;
+  height: 220px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+}
+.modal-card__body{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  p{
+    text-align: center;
+  }
+}
+.modal-card__title{
+  text-align: center;
+
+}
+.modal-card__lists{
+  li{
+
+  }
 }
 
 
