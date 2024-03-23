@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og:http://ogp.me/ns#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots content=noindex" />
+    <meta name="description" content=" ">
+    <meta property="og:url" content="https://example.com" />
+    <meta property="title" content="ポートフォリオサイト-yuri-">
+    <meta name="description" content="フリーランスWEBコーダーゆりのポートフォリオサイトです。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」などぜひ、お気軽にご相談ください。" />
+    <meta property="type" content="website">
+    <meta property="img" content="">
+
+
+    <title>ポートフォリオサイト-yuri-</title>
+
+<!-- モーダル -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<!-- グーグル -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</head>
+<body>
+    
+<!----------  お問い合わせ  ---------->
+
+<section id="entry" class="p-entry">
+    <div class="p-entry__inner l-inner">
+        <div class="p-entry__wrapper">
+        <div class="p-entry__title-wrapper wow fadeInUp">
+            <h2 class="p-entry__section-title c-section-title">Entry</h2>
+            <h3 class="p-entry__sub-title c-sub-title">エントリー</h3>
+        </div>
+                <div class="p-entry__content">
+                    <form method="post" action="mail.php" class="h-adr">
+                        <div class="p-entry__fields">
+<!---------- お名前  ---------->
+                            <dl class="p-entry__field">
+                                <dt class="p-entry__head">
+                                    <label for="お名前" class="p-entry__label">お名前</label>
+                                    <span class="p-entry__tag">必須</span>
+                                </dt>
+                                <dd class="p-entry__item">
+                                    <input 
+                                    class="p-entry-name__input js-form-input" required
+                                    type="text" 
+                                    name="お名前" 
+                                    id="your-name"
+                                    />
+                                    <p class="p-entry__placeholder">例）山田&emsp;太郎</p>
+                                </dd>
+                            </dl>
+<!---------- フリガナ  ---------->
+                            <dl class="p-entry__field">
+                                <dt class="p-entry__head">
+                                    <label for="フリガナ" class="p-entry__label">フリガナ</label>
+                                    <span class="p-entry__tag">必須</span>
+                                </dt>
+                                <dd class="p-entry__item">
+                                    <input 
+                                    class="p-entry-kana__input js-form-input" required
+                                    type="text" 
+                                    name="フリガナ" 
+                                    id="your-kana"
+                                    />
+                                    <p class="p-entry__placeholder">例）ヤマダ&emsp;タロウ</p>
+                                </dd>
+                            </dl>
+<!---------- お電話番号  ---------->
+                            <dl class="p-entry__field">
+                                <dt class="p-entry__head">
+                                    <label for="お電話番号" class="p-entry__label">お電話番号</label>
+                                    <span class="p-entry__tag">必須</span>
+                                </dt>
+                                <dd class="p-entry__item">
+                                    <input 
+                                    class="p-entry-tell__input js-form-input" required
+                                    type="tel" 
+                                    name="お電話番号" 
+                                    id="your-tel"
+                                    />
+                                    <p class="p-entry__placeholder">例）012-345-6789</p>
+                                </dd>
+                            </dl>
+<!--------- メールアドレス ---------->
+                            <dl class="p-entry__field">
+                                <dt class="p-entry__head">
+                                    <label for="Email" class="p-entry__label">メールアドレス</label>
+                                    <span class="p-entry__tag">必須</span>
+                                </dt>
+                                <dd class="p-entry__item">
+                                    <input 
+                                    class="p-entry-email__input js-form-input" required
+                                    type="email" 
+                                    name="Email" 
+                                    id="your-email"
+                                    />
+                                    <p class="p-entry__placeholder">例）xxx@sansan.co.jp</p>
+                                </dd>
+                            </dl>
+<!--------- メールアドレス (確認) ---------->
+                                <dl class="p-entry__field">
+                                    <dt class="p-entry__head">
+                                        <label for="メールアドレス-確認" class="p-entry__label">メールアドレス<br class="hidden-sp">（確認）</label>
+                                        <span class="p-entry__tag">必須</span>
+                                    </dt>
+                                    <dd class="p-entry__item">
+                                        <input 
+                                        class="p-entry-email-check__input js-form-input" required
+                                        type="email" 
+                                        name="メールアドレス-確認" 
+                                        id="email-check"
+                                        />
+                                        <p class="p-entry__placeholder">例）xxx@sansan.co.jp</p>
+                                    </dd>
+                                </dl>
+<!--------- 備考 ---------->  
+                                <dl class="p-entry__field">
+                                    <dt class="p-entry__head">
+                                        <label for="お問い合わせ内容" class="p-entry__label">お問い合わせ内容</label>
+                                    </dt>
+                                    <dd class="p-entry__item">
+                                        <textarea 
+                                        name="お問い合わせ内容"
+                                        id="address"
+                                        class="p-entry-textarea__input js-form-input"
+                                    ></textarea>
+                                    </dd>
+                                </dl>
+
+<!---------送信ボタン ---------->
+                                <div class="p-entry__button-wrapper p-button-wrapper">
+                                    <button class="p-entry__button c-entry-square-btn" type="submit"><p class="c-entry-text">エントリーする</p><span class="c-entry-square-link c-entry-link p-entry__square-link"><p class="c-entry-text">エントリーする</p></span></button>
+                                </div> 
+                                </div>
+                    </form>
+                    
+            </div>
+            <div class="top-button-wrapper">
+                <a href="#" class="p-entry__top-button c-button"><img src="./image/img-logo-top.png" width="147" height="128" alt="ロゴ画像"></a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW() .init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

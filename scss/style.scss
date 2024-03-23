@@ -125,7 +125,7 @@ h1{
 
 }
 .section__content{
-    margin-top: 46px;
+    margin-top: 40px;
 
     @include mq(md) {
       margin-top: 60px;
@@ -895,6 +895,22 @@ line-height: 3.5;
 padding-bottom: 80px;
   }
 }
+.works__time{
+  margin-top: 30px;
+}
+.works__time-lists{
+  margin-top: 20px;
+  li{
+    a{
+      text-decoration: underline;
+      transition: 0.3s color;
+      &:hover{
+        color: #E7728E;
+      }
+    }
+  }
+}
+
 .works__message{
   text-align: center;
 }
@@ -1720,12 +1736,13 @@ background-position: top;
     background-size: contain;
     width: 35px;
     height: 35px;
-    right: -35px;
+    right: 0px;
     top:67%;
     transform: translateY(-50%);
     opacity: 0.8;
     @include mq(sm) {
       top:50%;
+      right: -35px;
     }
 
   }

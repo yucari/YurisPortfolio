@@ -114,7 +114,7 @@ h1 {
 }
 
 .section__content {
-  margin-top: 46px;
+  margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
   .section__content {
@@ -1067,6 +1067,22 @@ h1 {
     padding-top: 50px;
     padding-bottom: 80px;
   }
+}
+
+.works__time {
+  margin-top: 30px;
+}
+
+.works__time-lists {
+  margin-top: 20px;
+}
+.works__time-lists li a {
+  text-decoration: underline;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+.works__time-lists li a:hover {
+  color: #E7728E;
 }
 
 .works__message {
@@ -2038,7 +2054,7 @@ a.bt-samp54 p {
   background-size: contain;
   width: 35px;
   height: 35px;
-  right: -35px;
+  right: 0px;
   top: 67%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2047,6 +2063,7 @@ a.bt-samp54 p {
 @media screen and (min-width: 600px) {
   .about-city__text::after {
     top: 50%;
+    right: -35px;
   }
 }
 
