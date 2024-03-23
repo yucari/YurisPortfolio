@@ -32,7 +32,113 @@
 </head>
 <body>
     
+<!----------  お問い合わせ  ---------->
 
+<section id="contact" class="contact section">
+    <div class="contact__inner inner">
+        <h2 class="heading section-head contact__head">Contact</h2>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe7JSiC2SdtpmnvejTe6f0jWCr3i6rg_rPqqJ8r73L78s1-gg/formResponse" class="contact__form section__content" id="form">
+            <p class="contact__text">
+                <span class="is-required">＊</span>は入力必須項目です</p>
+            <div class="contact__items">
+                <div class="contact__item contact-control">
+                    <div class="contact-control__head">
+                        <label 
+                        for="name" 
+                        class="form-label">お名前
+                            <span class="form-label__required">＊</span>
+                        </label>
+                    </div>
+                    <div class="contact-control__input">
+                        <input 
+                        type="text" 
+                        name="entry.1143772600" 
+                        id="name" 
+                        class="form-text"
+                        required>
+                    </div>
+                    
+                </div>
+                <div class="contact__item contact-control">
+                    <div class="contact-control__head">
+                        <label 
+                        for="mail" class="form-label">メールアドレス
+                            <span class="form-label__required">＊</span></label>
+                    </div>
+                    <div class="contact-control__input">
+                        <input type="email" 
+                        name="emailAddress" 
+                        id="mail" 
+                        class="form-text"
+                        required>
+                    </div>
+                    
+                </div>
+                <div class="contact__item contact-control">
+                    <div class="contact-control__head">
+                        <span class="form-label">お問い合わせ項目
+                            <span class="form-label__required">＊</span></span>
+                    </div>
+                    <div class="contact-control__input">
+                        <div class="contact-control__radios">
+                        <label class="form-radio">
+                            <input 
+                            type="radio" 
+                            name="entry.1781688909.other_option_response " 
+                            class="form-radio__input"
+                            required value="ご相談"
+                            checked
+                            />
+                            <span class="form-radio__text">ご相談</span>
+                        </label>
+                        <label class="form-radio">
+                            <input 
+                            type="radio" 
+                            name="entry.1781688909.other_option_response" 
+                            required value="ご質問"
+                            class="form-radio__input"
+                            />
+                            <span class="form-radio__text">ご質問</span>
+                        </label>
+                        <label class="form-radio">
+                            <input 
+                            type="radio" 
+                            name="entry.1781688909.other_option_response" 
+                            required value="その他"
+                            class="form-radio__input"
+                            />
+                            <span class="form-radio__text">その他</span>
+                        </label>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="contact__item contact-control">
+                    <div class="contact-control__head">
+                        <label for="your-message" class="form-label">お問い合わせ内容
+                            <span class="form-label__required">＊</span></label>
+                    </div>
+                    <div class="contact-control__input">
+                        <textarea 
+                        name="entry.1350839370" 
+                        id="your-message" 
+                        cols="30" 
+                        rows="10" 
+                        class="form-textarea"
+                        required
+                        >
+                    </textarea>
+                    </div>
+                    
+                </div>
+            </div>
+        
+                        <div class="contact__submit">
+                            <button type="submit" class="button">送信</button>
+                        </div>
+        </form>
+    </div>
+</section>
 <script src="js/wow.min.js"></script>
 <script>
     new WOW() .init();
