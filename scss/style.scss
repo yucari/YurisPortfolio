@@ -1844,7 +1844,6 @@ a{
 
 .city__lists dt :not(:nth-child(7)){
   &::after{
-  //right: -14%;
   
   }
 }
@@ -1852,13 +1851,7 @@ a{
 .js-city{
   opacity: 1;
 }
-.dd .material-symbols-outlined{
-  font-size: 24px;
-    line-height: 1;
-    color: #FFAD90;
 
-  
-}
 .city__lists{
   &:nth-child(4){
     position: relative;
@@ -1874,141 +1867,7 @@ a{
   }
 }
 
-/*=====================
-      Contact 
-======================*/
-.contact{
 
-
-}
-.contact__inner{
-  padding-top: 60px;
-  padding-bottom: 40px;
-  @include mq(md) {
-    padding-top: 50px;
-    padding-bottom: 80px;
-    max-width: 840px;
-}
-}
-.contact__head {
-  color: $main-color;
-}
-.contact__form{
-
-}
-.contact__text{
-  font-size: 14px;
- font-weight: 600;
- text-align: center;
-.is-required{
-  color: #E7728E;
-}
-}
-.contact__items{
-margin-top: 28px;
-display: flex;
-flex-direction: column;
-gap: 32px;
-
-@include mq(md) {
-  margin-top: 19px;
-}
-}
-.contact__item{
-
-}
-.contact__footer{
-margin-top: 28px;
-
-@include mq(md) {
-  margin-top: 32px;
-}
-}
-.contact__privacy{
-text-align: center;
-
-}
-.contact__submit{
-margin-top: 24px;
-text-align: center;
-
-@include mq(md) {
-  margin-top: 44px;
-}
-}
-.contact-control{
-display: flex;
-flex-direction: column;
-gap: 3px;
-
-@include mq(md) {
-  flex-direction: row;
-  gap: 10px;
-}
-}
-.contact-control__head{
-  display: flex;
-  align-items: center;
-  @include mq(md) {
-    
-  }
-width: 180px;
-flex-shrink: 0;
-}
-
-.contact-control__input {
- flex-grow: 1;
-
-}
-
-.form-label__required{
-  color: #E7728E;
-  font-size: 10px;
-  font-weight: 600;
-
-  @include mq(md) {
-    font-size: 12px;
-  }
-
-}
-.form-text{
-width: 100%;
-height: 40px;
-border:0;
-font-size: 16px;
-background: #FFF;
-box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
-
-&:focus {
-  outline: $main-color auto 1px;
-  box-shadow: 5px 6px 16px 0px rgba($main-color, 0.16);
-}
-}
-
-
-.form-textarea {
-height: 122px;
-border: 0;
-background: #FFF;
-box-shadow: 5px 6px 16px 0px rgba(96, 96, 96, 0.16);
-resize: vertical;
-font-size: 16px;
-bottom: 0;
-width: 100%;
-
-&:focus {
-  outline: $main-color auto 1px;
-  box-shadow: 5px 6px 16px 0px rgba($main-color, 0.16);
-}
-}
-
-.end-message {
-  display: none;
-}
-
-.false-message {
-  display: none;
-}
 
 .footer{
   background: #f0f0f0;
@@ -2192,8 +2051,8 @@ justify-content: center;
   justify-content: center;
   gap:15%;
   position: relative;
-  &:nth-child(4){
-
+  @include mq(sm) {
+    gap: 0;
   }
 }
 .modal-card__title{
@@ -2211,8 +2070,6 @@ justify-content: center;
   width: 120px;
   height: 140px;
   position: relative;
-  //position: absolute;
-  //right: 0;
   top: 50%;
   //transform: translateY(-50%);
 

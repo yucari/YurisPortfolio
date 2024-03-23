@@ -215,4 +215,50 @@ MicroModal.init({
   disableScroll: true,
 });
 
+function submitForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('mail').value;
+  var inquiryType = document.querySelector('input[name="entry.1781688909"]:checked').value;
+  
+  v
+var message = document.getElementById('your-message').value;
+
+  
+}
+function sendDataToGoogleForm(name, email, inquiryType, message) {
+  // Googleフォームの送信先URL
+  var googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSe7JSiC2SdtpmnvejTe6f0jWCr3i6rg_rPqqJ8r73L78s1-gg/formResponse';
+
+  // Googleフォームの送信データを作成
+  var formData = new FormData();
+  formData.append('entry.1143772600', name);  // 名前
+  formData.append('entry.1763403160', email); // メールアドレス
+  formData.append('entry.1781688909', inquiryType);  // お問い合わせ項目
+  formData.append('entry.1350839370', message); // お問い合わせ内容
+
+  // HTTPリクエストを作成してGoogleフォームにデータを送信
+  fetch(googleFormURL, {
+      method: 'POST',
+      body: formData,
+      mode: 'no-cors' // クロスオリジン制約をバイパスするためのモード
+  })
+  .then(function(response) {
+      // レスポンスを処理する（必要に応じて）
+      console.log('Form data sent successfully');
+  })
+  .catch(function(error) {
+      // エラーを処理する（必要に応じて）
+      console.error('Error sending form data:', error);
+  });
+}
+
+function submitForm() {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('mail').value;
+  var inquiryType = document.querySelector('input[name="entry.1781688909"]:checked').value;
+  var message = document.getElementById('your-message').value;
+
+  sendDataToGoogleForm(name, email, inquiryType, message);
+}
+
 })
