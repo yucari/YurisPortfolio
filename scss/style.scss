@@ -974,6 +974,11 @@ padding-bottom: 80px;
       }
   }
 }
+&:nth-child(1){
+  @include mq(md) {
+    margin-top: 40px;
+  }
+}
 }
 .works-card__head{
   text-align: center;
@@ -1265,8 +1270,11 @@ img{
     opacity: 0.4;
     left: -16%;
     top: 0px;
-    @include mq(md) {
-      
+    transform: rotate(-100deg);
+    @include mq(sm) {
+      width: 180px;
+      height: 180px;
+     left: -50%;
     }
 
 }
@@ -1332,7 +1340,7 @@ width: 100%;
     border-radius: 50%;
     right: 0px;
     top: -190px;
-    @include mq(md) {
+    @include mq(sm) {
     width: 180px;
     height: 180px;
     
@@ -1349,7 +1357,7 @@ width: 100%;
     opacity: 0.4;
     right: 0px;
     top: -215px;
-    @include mq(md) {
+    @include mq(sm) {
       width: 100px;
       height: 100px;
     }
@@ -1396,6 +1404,10 @@ width: 100%;
     transform: rotate(60deg);
     left: 0;
     top: -49px;
+    @include mq(sm) {
+      width: 200px;
+    height: 200px;
+    }
   }
   &::after{
     content:"";
@@ -1409,6 +1421,11 @@ width: 100%;
     left: 0;
     top: 0px;
     transform: rotate(265deg);
+    @include mq(sm) {
+      width: 100px;
+      height: 100px;
+      top: 100px;
+    }
   }
   @include mq(md) {
     flex-direction: row-reverse;
@@ -1428,6 +1445,12 @@ width: 100%;
     transform: rotate(95deg);
     top:0;
     left:0;
+    @include mq(md) {
+    width: 180px;
+    height: 180px;
+    top: -30%;
+    left: -50px;
+    }
     
   }
   &::after{
@@ -1458,6 +1481,10 @@ width: 100%;
     right: -5%;
     top: 0px;
     z-index: -1;
+    @include mq(sm) {
+      width: 160px;
+    height: 160px;
+    }
   }
   &::before{
     content: "";
@@ -1471,6 +1498,15 @@ width: 100%;
     left: -6%;
     top: 240px;
     z-index: -1;
+    @include mq(sm) {
+      width: 160px;
+      height: 160px;
+    }
+    @include mq(md) {
+      width: 160px;
+      height: 160px;
+      left: -3%;
+    }
   }
   @include mq(md) {
     flex-direction: row-reverse;
@@ -1564,10 +1600,16 @@ a{
   right: 0;
   top: -118px ;
   z-index: -1;
+  transform: rotate(14deg);
   @include mq(sm) {
     width: 120px;
-  height: 120px;
-  right: -50%;
+    height: 110px;
+    right: -50%;
+    top: -70px;
+  }
+  @include mq(md) {
+    width: 170px;
+    height: 140px;
   }
 
 }
@@ -1991,8 +2033,11 @@ justify-content: center;
   max-height: 80vh;
   max-width: 500px;
   overflow-y: auto;
-  padding: 30px;
+  padding: 10px;
   width: 80%;
+  @include mq(sm) {
+    padding: 30px;
+  }
 }
 
 .modal-header {
@@ -2021,6 +2066,9 @@ justify-content: center;
   height: auto;
   margin: 0 auto;
   width: 90%;
+  @include mq(pc) {
+    max-width: 800px;
+  }
 }
 .modal-card{
 
@@ -2062,6 +2110,7 @@ justify-content: center;
 .modal-card__lists{
   flex-shrink: 0;
   padding-top: 10px;
+  z-index: 2;
   li{
 
   }
@@ -2069,9 +2118,15 @@ justify-content: center;
 .modal-card__deco{
   width: 120px;
   height: 140px;
-  position: relative;
+  position: absolute;
+  right: 0;
   top: 50%;
-  //transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+  @include mq(sm) {
+    position: relative;
+    transform: translateY(0);
+  }
 
   img{
     width: 100%;
@@ -2081,6 +2136,14 @@ justify-content: center;
 }
 .modal4-card__wrapper{
   gap: 0;
+}
+.deco-4{
+  position: absolute;
+  top: 20%;
+  right: 0;
+  @include mq(sm) {
+    top: 0;
+  }
 }
 
   /* モーダルアニメーション */
