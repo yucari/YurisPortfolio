@@ -689,6 +689,10 @@ h1 {
 /*=====================
         fv
 ======================*/
+.fv {
+  background: #f0f0f0;
+}
+
 .fv__inner {
   position: relative;
   background: #FFFAFA;
@@ -946,6 +950,10 @@ h1 {
 /*=====================
         message
 ======================*/
+.message {
+  background: #f0f0f0;
+}
+
 .message__inner {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -1044,7 +1052,13 @@ h1 {
 /*=====================
         works
 ======================*/
+.works {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(white));
+  background: linear-gradient(#f0f0f0, white);
+}
+
 .works__inner {
+  background: #FFF;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -2519,13 +2533,46 @@ a.bt-samp54 p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 .modal-card__body p {
   text-align: center;
 }
 
+.modal-card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15%;
+  position: relative;
+}
 .modal-card__title {
   text-align: center;
+}
+
+.modal-card__lists {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 10px;
+}
+.modal-card__deco {
+  width: 120px;
+  height: 140px;
+  position: relative;
+  top: 50%;
+}
+.modal-card__deco img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.modal4-card__wrapper {
+  gap: 0;
 }
 
 /* モーダルアニメーション */
