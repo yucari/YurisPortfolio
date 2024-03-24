@@ -2179,6 +2179,12 @@ a.bt-samp54 p {
   margin-top: 3px;
   font-size: 18px;
 }
+@media screen and (max-width: 768px) {
+  .city__lists dd:nth-of-type(2) {
+    /* 768pxまでの幅の場合に適用される */
+    background-color: #f10010;
+  }
+}
 
 .city__lists dt {
   position: relative;
