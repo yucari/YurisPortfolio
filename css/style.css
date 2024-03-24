@@ -1434,7 +1434,11 @@ a.bt-samp54 p {
 
 .profile__content dd {
   margin-top: 20px;
-  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .profile__content dd {
+    font-size: 18px;
+  }
 }
 
 .profile__image-wrapper {
@@ -2173,17 +2177,11 @@ a.bt-samp54 p {
   width: fit-content;
   visibility: hidden;
   margin-top: 3px;
-  font-size: 18px;
+  font-size: 16px;
 }
-@media screen and (max-width: 768px) {
-  .city__lists dd:nth-of-type(2) {
-    /* 768pxまでの幅の場合に適用される */
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .city__lists dd:nth-of-type(2):nth-of-type(3) {
-    font-size: 16px;
+@media screen and (min-width: 768px) {
+  .city__lists dd {
+    font-size: 18px;
   }
 }
 

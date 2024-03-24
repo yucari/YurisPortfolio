@@ -1218,7 +1218,10 @@ a.bt-samp54 p{
 }
 .profile__content dd{
   margin-top: 20px;
-  font-size: 18px;
+  
+  @include mq(md) {
+    font-size: 18px; 
+  }
 }
 .profile__image-wrapper{
   margin-top: 40px;
@@ -1827,20 +1830,12 @@ a{
   width: fit-content;
   visibility: hidden;
   margin-top: 3px;
-  font-size: 18px;
-  &:nth-of-type(2){
-    @media screen and (max-width: 768px) {
-      /* 768pxまでの幅の場合に適用される */
-      font-size: 16px;       
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 18px;
   }
-  &:nth-of-type(3){
-    @media screen and (max-width: 768px) {
-      font-size: 16px;  
-  }
-  
 }
-}
-}
+
 .city__lists dt{
     position: relative;
     &::before{
