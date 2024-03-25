@@ -929,6 +929,9 @@ padding-bottom: 80px;
   text-align: left;
     font-size: 11px;
     margin-top: 10px;
+    @include mq(md) {
+      text-align: center;
+    }
 }
 .works__card{
   width: 100%;
