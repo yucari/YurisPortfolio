@@ -925,6 +925,11 @@ padding-bottom: 80px;
 
   margin-top: 20px;
 }
+.works__text-basic{
+  text-align: left;
+    font-size: 11px;
+    margin-top: 10px;
+}
 .works__card{
   width: 100%;
   @include mq(md) {
@@ -978,6 +983,9 @@ padding-bottom: 80px;
 }
 .works-card__head{
   text-align: center;
+  p{
+    font-size: 12px;
+  }
 
 }
 .works-card__image{
@@ -2037,9 +2045,12 @@ justify-content: center;
   max-width: 500px;
   overflow-y: auto;
   padding: 10px;
-  width: 80%;
+  width: 90%;
   @include mq(sm) {
     padding: 30px;
+  }
+  @include mq(md) {
+    width: 80%;
   }
 }
 
@@ -2069,9 +2080,13 @@ justify-content: center;
   height: auto;
   margin: 0 auto;
   width: 90%;
+  
   @include mq(pc) {
     max-width: 800px;
   }
+}
+.modal-card__basic{
+  font-size:14px ;
 }
 .modal-card{
 
