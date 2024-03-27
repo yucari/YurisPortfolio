@@ -48,74 +48,91 @@ var stalker = $("#stalker");
 
 
 $(function(){
-    //カーソル要素の指定
-    var cursor=$("#cursor");
-    
-    //mousemoveイベントでカーソル要素を移動させる
-    $(document).on("mousemove",function(e){
-      //カーソルの座標位置を取得
-      var x=e.clientX;
-      var y=e.clientY;
-      //カーソル要素のcssを書き換える用
-      cursor.css({
-        "opacity":"1",
-        "top":y+"px",
-        "left":x+"px"
-      });
-    });
+  //カーソル要素の指定
+  var cursor=$("#cursor");
   
-     //aタグホバー
-     $("a").on({
-      "mouseenter": function() {
-        //activeクラス付与
-        cursor.addClass("active");
-        stalker.addClass("active");
-      },
-      "mouseleave": function() {
-        cursor.removeClass("active");
-        stalker.removeClass("active");
-      }
-    });
-  
-     //buttonタグホバー
-     $("button").on({
-      "mouseenter": function() {
-        //activeクラス付与
-        cursor.addClass("active");
-        stalker.addClass("active");
-      },
-      "mouseleave": function() {
-        cursor.removeClass("active");
-        stalker.removeClass("active");
-      }
-    });
-  
-      //liタグホバー
-      $("li").on({
-      "mouseenter": function() {
-        //activeクラス付与
-        cursor.addClass("active");
-        stalker.addClass("active");
-      },
-      "mouseleave": function() {
-        cursor.removeClass("active");
-        stalker.removeClass("active");
-      }
-    });
-    
-    //buttonタグホバー
-     $("#hamburger").on({
-      "mouseenter": function() {
-        //activeクラス付与
-        cursor.addClass("active");
-        stalker.addClass("active");
-      },
-      "mouseleave": function() {
-        cursor.removeClass("active");
-        stalker.removeClass("active");
-      }
+  //mousemoveイベントでカーソル要素を移動させる
+  $(document).on("mousemove",function(e){
+    //カーソルの座標位置を取得
+    var x=e.clientX;
+    var y=e.clientY;
+    //カーソル要素のcssを書き換える用
+    cursor.css({
+      "opacity":"1",
+      "top":y+"px",
+      "left":x+"px"
     });
   });
+
+  $(document).on("touchmove",function(e){
+    e.preventDefault();
+    let targetTouch = e.targetTouches[0];
+
+    //カーソルの座標位置を取得
+    let x = targetTouch.clientX;
+    let y = targetTouch.clientY;
+    
+    //カーソル要素のcssを書き換える用
+    cursor.css({
+      "opacity":"1",
+      "top":y+"px",
+      "left":x+"px"
+    });
+  });
+
+   //aタグホバー
+   $("a").on({
+    "mouseenter": function() {
+      //activeクラス付与
+      cursor.addClass("active");
+      stalker.addClass("active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("active");
+      stalker.removeClass("active");
+    }
+  });
+
+   //buttonタグホバー
+   $("button").on({
+    "mouseenter": function() {
+      //activeクラス付与
+      cursor.addClass("active");
+      stalker.addClass("active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("active");
+      stalker.removeClass("active");
+    }
+  });
+
+    //liタグホバー
+    $("li").on({
+    "mouseenter": function() {
+      //activeクラス付与
+      cursor.addClass("active");
+      stalker.addClass("active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("active");
+      stalker.removeClass("active");
+    }
+  });
+  
+  //buttonタグホバー
+   $("#hamburger").on({
+    "mouseenter": function() {
+      //activeクラス付与
+      cursor.addClass("active");
+      stalker.addClass("active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("active");
+      stalker.removeClass("active");
+    }
+  });
+});
+
 
 // 文字を横から出現させるアニメーション
 
