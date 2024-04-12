@@ -849,7 +849,7 @@ h1 {
           animation: fall 7s linear infinite, rotate1 3s ease-in-out infinite alternate;
 }
 
-.no-webp .fv__image {
+.fv__image {
   background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.png) center center no-repeat;
   background-size: cover;
   border-radius: 40% 60% 40% 50%/60% 60% 50% 60%;
@@ -858,37 +858,13 @@ h1 {
   padding-top: 56.5%;
 }
 @media screen and (min-width: 768px) {
-  .no-webp .fv__image {
+  .fv__image {
     width: 70%;
     margin-left: auto;
     display: block;
   }
 }
-.no-webp .fv__image img {
-  border-radius: 40% 60% 40% 50%/60% 60% 50% 60%;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 800/645;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.webp .fv__image {
-  background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.webp) center center no-repeat;
-  background-size: cover;
-  border-radius: 40% 60% 40% 50%/60% 60% 50% 60%;
-  width: 100%;
-  height: 0;
-  padding-top: 56.5%;
-}
-@media screen and (min-width: 768px) {
-  .webp .fv__image {
-    width: 70%;
-    margin-left: auto;
-    display: block;
-  }
-}
-.webp .fv__image img {
+.fv__image img {
   border-radius: 40% 60% 40% 50%/60% 60% 50% 60%;
   width: 100%;
   height: 100%;

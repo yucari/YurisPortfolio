@@ -698,8 +698,8 @@ padding-bottom: 165px;
 	animation: fall 7s linear infinite, rotate1 3s ease-in-out infinite alternate;
 }
 
-.no-webp{
-  .fv__image {
+
+.fv__image {
 background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.png)center center no-repeat;
 
 background-size: cover;
@@ -720,31 +720,9 @@ display: block;
        object-fit: cover;
     }
 }
-}
 
-.webp{
-  .fv__image {
-  background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.webp)center center no-repeat;
-  
-  background-size: cover;
-  border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
-  width: 100%;
-  height: 0;
-  padding-top: 56.5%;
-      @include mq(md) {
-        width: 70%;
-  margin-left: auto;
-  display: block;
-      }
-      img {
-        border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
-        width: 100%;
-        height: 100%;
-        aspect-ratio: 800 / 645;
-         object-fit: cover;
-      }
-}
-}
+
+
 .fv__message {
 border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
 background: #FFF;
