@@ -11,8 +11,7 @@ jQuery(function ($) {
 
     function handleLinkClick(targetId) {
       var navElement = $('.nav');
-     
-
+  
       var allSections = $('.section');
       allSections.css('display', 'none');
 
@@ -39,6 +38,12 @@ jQuery(function ($) {
 
       closeMenu();
     });
+    $(targetId).get(0).scrollIntoView({
+  behavior: 'smooth',   
+  block: 'start' // 上端をビューポートの上端に合わせる
+  });
+  
+
   });
 
   
@@ -277,5 +282,6 @@ function submitForm() {
 
   sendDataToGoogleForm(name, email, inquiryType, message);
 }
+
 
 })
