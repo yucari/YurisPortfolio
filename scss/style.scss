@@ -698,8 +698,10 @@ padding-bottom: 165px;
 	animation: fall 7s linear infinite, rotate1 3s ease-in-out infinite alternate;
 }
 
-.fv__image {
-background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.jpg)center center no-repeat;
+.no-webp{
+  .fv__image {
+background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.png)center center no-repeat;
+
 background-size: cover;
 border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
 width: 100%;
@@ -717,10 +719,33 @@ display: block;
       aspect-ratio: 800 / 645;
        object-fit: cover;
     }
+}
+}
 
+.webp{
+  .fv__image {
+  background: url(../img/joshua-hurzeler-Y0oAladtxeA-unsplash.webp)center center no-repeat;
+  
+  background-size: cover;
+  border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
+  width: 100%;
+  height: 0;
+  padding-top: 56.5%;
+      @include mq(md) {
+        width: 70%;
+  margin-left: auto;
+  display: block;
+      }
+      img {
+        border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 800 / 645;
+         object-fit: cover;
+      }
+}
 }
 .fv__message {
-//margin-top: 30px;
 border-radius: 40% 60% 40% 50% / 60% 60% 50% 60%;
 background: #FFF;
 padding: 9%;
@@ -787,7 +812,7 @@ width: fit-content;
 .message__inner{
   padding-top: 60px;
 padding-bottom: 80px;
-background: linear-gradient(rgba(152, 251, 152, 0.15), #ffff), url('../img/zhen-h-dO5quaqAYg0-unsplash.jpg');
+background: linear-gradient(rgba(152, 251, 152, 0.15), #ffff), url('../img/zhen-h-dO5quaqAYg0-unsplash.webp');
 
 background-size: cover;
 background-repeat: no-repeat;
